@@ -49,10 +49,10 @@
   // Use the data from the JSON file
       $.each(data, function(index, item) {
         // alert(item.name); // Print the "name" property of each object
-        if(item.path.startsWith("image/網頁- 展板 告示箱")){
+        if(item.path.startsWith("image/網頁- 檯5 老師檯")){
           var elementToAppend = $('<div class="col-lg-3 col-md-3 portfolio-item filter-app"><div class="card" >'+
           '<img class="card-img-top" src="'+item.path+'"><div class="card-body">'+
-          '<p class="card-text">'+item.name+'</p></div> <div class="card-body"><a href="'+item.path+'" class="card-link"><i class="bx bx-plus"></i><放大圖/a></div></div></div>'+
+          '<p class="card-text">型號/名稱：'+item.name+'</p></div> <div class="card-body"><a href="'+item.path+'" class="card-link"><i class="bx bx-plus"></i>放大圖</a></div></div></div>'+
           ' '
           ); // Create the element you want to append
           $('#subProfolio').append(elementToAppend);
@@ -74,7 +74,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">展板</h1>
+          <h1 data-aos="fade-up">學生檯</h1>
           <!-- <h2 data-aos="fade-up" data-aos-delay="400"></h2> -->
           <div data-aos="fade-up" data-aos-delay="800">
             <a href="#portfolio" class="btn-get-started scrollto">Get Started</a>
